@@ -1,0 +1,191 @@
+.header {
+  z-index: 100;
+  background: #fff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  display: flex;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 12px #0000001a;
+}
+
+.logo {
+  align-items: center;
+  gap: .75rem;
+  display: flex;
+}
+
+.logo img {
+  object-fit: cover;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  transition: transform .3s;
+}
+
+.logo img:hover {
+  transform: rotate(8deg)scale(1.05);
+}
+
+.logo h2 {
+  color: #ff4b2b;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.navbar {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.navbar ul {
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.navbar li a {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color .3s;
+  position: relative;
+}
+
+.navbar li a:after {
+  content: "";
+  background: #ff4b2b;
+  width: 0%;
+  height: 2px;
+  transition: width .3s;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+
+.navbar li a:hover {
+  color: #ff4b2b;
+}
+
+.navbar li a:hover:after {
+  width: 100%;
+}
+
+.cart {
+  position: relative;
+}
+
+.cart .badge {
+  color: #fff;
+  background: #ff4b2b;
+  border-radius: 50%;
+  padding: 3px 6px;
+  font-size: .7rem;
+  font-weight: 700;
+  position: absolute;
+  top: -8px;
+  right: -10px;
+}
+
+@media (width <= 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 1.5rem;
+  }
+
+  .logo h2 {
+    font-size: 1.2rem;
+  }
+
+  .navbar ul {
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: .75rem;
+  }
+}
+
+.search-bar {
+  letter-spacing: 20px;
+  align-items: center;
+  gap: .5rem;
+  margin: 10px 10px 10px 100px;
+  display: flex;
+  position: sticky;
+}
+
+.search-bar > input, button {
+  padding: 5px;
+}
+
+.search-bar > button {
+  background-color: #f07059;
+}
+
+.search-bar > button:hover {
+  color: #b6f4d5;
+  background-color: #f31f1f;
+}
+
+.res-card {
+  cursor: pointer;
+  border: 1px solid #000;
+  width: 210px;
+  margin: 10px;
+}
+
+.res-card ul {
+  text-align: left;
+  margin-top: 8px;
+  padding-inline-start: 15px;
+  list-style: none;
+}
+
+.res-card > ul > li {
+  margin-bottom: 5px;
+}
+
+.res-card > img {
+  width: 180px;
+  margin: 5px;
+}
+
+.cards-container {
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-left: 100px;
+  display: flex;
+}
+
+.filter_btn {
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+.filter {
+  display: flex;
+}
+
+.shimmer_container {
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-left: 100px;
+  display: flex;
+}
+
+.fake_card {
+  background-color: #f0f0f0;
+  width: 200px;
+  height: 300px;
+  margin: 10px;
+}
+
+.btn {
+  margin-left: 30px;
+}
+/*# sourceMappingURL=Yum-Town.3a01df49.css.map */

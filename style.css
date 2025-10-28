@@ -1,6 +1,190 @@
-#root{
-    height: 300px;
-    width: 200px;
-    border: 2px solid black;
-    background-color: blue;
+/* ===== Header Container ===== */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* ===== Logo Section ===== */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: rotate(8deg) scale(1.05);
+}
+
+.logo h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ff4b2b;
+  letter-spacing: 1px;
+}
+
+/* ===== Navbar Styling ===== */
+.navbar{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #333;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar li a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #ff4b2b;
+  transition: width 0.3s ease;
+}
+
+.navbar li a:hover {
+  color: #ff4b2b;
+}
+
+.navbar li a:hover::after {
+  width: 100%;
+}
+
+/* ===== Cart Badge ===== */
+.cart {
+  position: relative;
+}
+
+.cart .badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: #ff4b2b;
+  color: white;
+  font-size: 0.7rem;
+  padding: 3px 6px;
+  border-radius: 50%;
+  font-weight: 700;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 1.5rem;
+  }
+
+  .logo h2 {
+    font-size: 1.2rem;
+  }
+
+  .navbar ul {
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 0.75rem;
+  }
+}
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 10px;
+    margin-left: 100px;
+    position: sticky;
+    letter-spacing: 20px;
+}
+
+.search-bar > input,button{
+    padding: 5px;
+}
+.search-bar > button{
+    background-color: #f07059;
+}
+.search-bar>button:hover{
+    color: rgb(182, 244, 213);
+    background-color: #f31f1f;
+}
+
+.res-card{
+    border: 1px solid black;
+    width: 210px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.res-card ul{
+    list-style: none;
+    text-align: left;
+    padding-inline-start: 15px;
+    margin-top: 8px;
+}
+.res-card>ul>li{
+  margin-bottom: 5px;
+}
+.res-card>img{
+    width: 180px;
+    margin: 5px;
+
+}
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.filter_btn{
+    margin-left: 50px;
+      margin-top: 10px;
+}
+
+.filter{
+  display: flex;
+}
+.shimmer_container{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+.fake_card{
+  height: 300px;
+  width: 200px;
+  background-color: #f0f0f0;
+  margin: 10px;
+}
+
+.btn{
+  margin-left: 30px;
 }

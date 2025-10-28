@@ -1,0 +1,1 @@
+{"mappings":"AAAA;AAEA,MAAM,OAAO,SAAS,UAAU,CAAC,SAAS,cAAc,CAAC;AACzD,KAAK,MAAM,CAAC","sources":["script.js"],"sourcesContent":["inport\r\n\r\nconst root = ReactDOM.createRoot(document.getElementById(\"root\"));\r\nroot.render(sentence);"],"names":[],"version":3,"file":"Yum-Town.672d4772.js.map","sourceRoot":"/__parcel_source_root/"}
