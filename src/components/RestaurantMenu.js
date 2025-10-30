@@ -1,28 +1,30 @@
-import { useEffect } from "react"
+import Shimmer from "./Shimmer";
+import { useParams } from 'react-router-dom';
+import useRestaurantMenu from "../utils/useRestaurantMenu";
+
 
 const RestaurantMenu = ()=>{
-//     useEffect(()=>{
-//         fetchMenu()
-//     },[])
+    const {resId} = useParams();
 
-//     const fetchMenu = async ()=>{
-//         const data = await fetch("http://localhost:5000/api/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=28.7040592&lng=77.10249019999999&restaurantId=603438&catalog_qa=undefined&submitAction=ENTER");
+    const resInfo = useRestaurantMenu(resId);
 
-//         const json = await data.json();
+    if(resInfo === null) return <Shimmer />
 
-//         console.log(json);
-//     }
+    const {name, cusines, costForTwoMessage} =  resInfo?.cards[2]?.card?.card?.info;
+    const {resItems} = resInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card;
+
     return(
         <div className="Menu">
-            <h1>Name of the Restaurant</h1>
-            <h2>cost for Two</h2>
+            <h1>{name}</h1>
+            <p>{cusines.join(",")}- Rs.{costForTwoMessage}</p>
+            <h1>Menu:-</h1>
             <div className="items_list">
-                <ul>
-                    <li>chilli paneer</li>
-                    <li>chilli potato</li>
-                    <li>manchurian</li>
-                    <li>litti Choka</li>
-                </ul>
+                    {resItems.map((item)=>(
+                        <div key={item.card.info.id} className="menu_items">
+                            <h2 className="item">{item.card.info.name} - Rs.</h2>
+                            <h2>{item.card.info.price/100 || item.card.info.defaultPrice/100}</h2>
+                        </div>
+                    ))}                  
             </div>
         </div>
     )

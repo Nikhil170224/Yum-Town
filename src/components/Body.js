@@ -2,6 +2,8 @@
 import { useEffect, useState } from "react";
 import Card from "./Card";
 import Shimmer from "./Shimmer";
+import useOnlineStatus from "../utils/useOnlineStatus";
+
 
 const Body =()=>{
   const [ResList,setResList] = useState([]);
@@ -14,7 +16,7 @@ const Body =()=>{
 
   const fetchData = async ()=>{
     const data = await fetch(
-  'https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.7040592&lng=77.1024901&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING')
+  'https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.624480699999999&page_type=DESKTOP_WEB_LISTING')
 
     const json = await data.json();
     // Safely access nested data with optional chaining (to avoid crashes)
@@ -23,6 +25,8 @@ const Body =()=>{
     setResList(restaurants);
     setfilteredReslist(restaurants);
   }
+  const onlinestatus = useOnlineStatus();
+  if(onlinestatus === false) return <h1>🔌 Please check your internet conection...</h1>
 
     return ResList.length === 0 ?
      <Shimmer/> : (
