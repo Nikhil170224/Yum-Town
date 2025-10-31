@@ -8,44 +8,47 @@ const Header = () => {
 
   const onlinestatus = useOnlineStatus();
   return (
-    <header className="header">
-      <div className="logo">
+    <header className="flex justify-between items-center px-8 py-4 shadow-md bg-white">
+      {/* Left: Logo */}
+      <div className="flex items-center space-x-4">
         <img
+          className="w-16 h-16 object-contain"
           src="https://png.pngtree.com/png-clipart/20230922/original/pngtree-food-delivery-logo-template-design-sign-menu-vector-png-image_12522801.png"
           alt="App Logo"
         />
-        <h2>YumTown</h2>
+        <h2 className="text-xl font-semibold">YumTown</h2>
       </div>
 
-      <nav className="navbar">
-        <ul>
-          <li>Online Status: {onlinestatus === true ? " 🟢" : " 🔴"} </li>
-          <li>
+      {/* Center: Navigation */}
+      <nav className="flex space-x-10">
+        <ul className="flex space-x-6">
+          <li>Online Status: {onlinestatus ? "🟢" : "🔴"}</li>
+          <li className="hover:text-orange-600 font-bold">
             <Link to="/">Home</Link>
           </li>
-          <li>
+          <li className="hover:text-orange-600 font-bold">
             <Link to="/about">About Us</Link>
           </li>
-          <li>
+          <li className="hover:text-orange-600 font-bold">
             <Link to="/offer">Offers</Link>
           </li>
-          <li>
+          <li className="hover:text-orange-600 font-bold">
             <Link to="/contact">Contact Us</Link>
           </li>
-          <li>
+          <li className="hover:text-orange-600 font-bold">
             <Link to="/grocery">Grocery</Link>
           </li>
-          <li className="cart">
-            <a href="#">
-              🛒 <span className="badge">2</span>
-            </a>
+          <li className="relative">
+            🛒{" "}
+            <span className="absolute -top-2 -right-2 text-sm bg-gray-200 rounded-full px-1">
+              2
+            </span>
           </li>
         </ul>
+
         <button
-          className="btn"
-          onClick={() => {
-            setbtnName(btnName === "login" ? "logout" : "login");
-          }}
+          className="mx-4 border box-border w-25 h-8 items-center px-6 py-1 rounded-md hover:bg-gray-100 "
+          onClick={() => setbtnName(btnName === "login" ? "logout" : "login")}
         >
           {btnName}
         </button>
