@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
-// import { LOGO_URL } from "../utils/constants";
+import { LOGO_URL } from "../utils/constants";
 
 const Header = () => {
   const [btnName,setbtnName] = useState("login");
@@ -13,7 +13,7 @@ const Header = () => {
       <div className="flex items-center space-x-4">
         <img
           className="w-16 h-16 object-contain"
-          src="https://png.pngtree.com/png-clipart/20230922/original/pngtree-food-delivery-logo-template-design-sign-menu-vector-png-image_12522801.png"
+          src={LOGO_URL}
           alt="App Logo"
         />
         <h2 className="text-xl font-semibold">YumTown</h2>

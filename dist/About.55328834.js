@@ -207,11 +207,11 @@
       });
     }
   }
-})({"1aWES":[function(require,module,exports,__globalThis) {
+})({"605C5":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
-var HMR_SERVER_PORT = 1234;
+var HMR_SERVER_PORT = 49673;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "439701173a9199ea";
 var HMR_USE_SSE = false;
@@ -727,43 +727,197 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _userClass = require("./UserClass");
 var _userClassDefault = parcelHelpers.interopDefault(_userClass);
 var _react = require("react");
-class About extends (0, _react.Component) {
-    constructor(){
-        super();
-        console.log("parent constructor is called");
-    }
-    componentDidMount() {
-        console.log("parent's componentdidMount is called ");
-    }
-    render() {
-        console.log("parent render is called");
-        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "about_us",
+var _reactDefault = parcelHelpers.interopDefault(_react);
+// class About extends Component{
+//     constructor(){
+//         super();
+//         console.log("parent constructor is called")
+//     }
+//     componentDidMount(){
+//     console.log("parent's componentdidMount is called ")
+//     }
+//     render(){
+//         console.log("parent render is called")
+//         return(
+//             <div className="m-10 border bg-blue-100 px-5 space-y-6">
+//                 <h1 className="m-2.5 text-5xl font-bold py-1.5">About Us!</h1>
+//                 <UserClass name={"Nikhil (Class)"} location={"Ghaziabad"} />
+//             </div>
+//         )
+//     }
+// }
+const About = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "flex justify-center items-center min-h-screen from-orange-50 to-orange-100 p-6",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "max-w-lg w-full bg-white rounded-2xl shadow-lg p-8 transform transition-all hover:scale-105 hover:shadow-2xl",
             children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "About Us!"
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "flex justify-center mb-4",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        src: "https://cdn-icons-png.flaticon.com/512/1046/1046784.png",
+                        alt: "YumTown Logo",
+                        className: "w-20 h-20 animate-bounce-slow"
+                    }, void 0, false, {
+                        fileName: "src/components/About.js",
+                        lineNumber: 31,
+                        columnNumber: 11
+                    }, undefined)
                 }, void 0, false, {
                     fileName: "src/components/About.js",
-                    lineNumber: 16,
-                    columnNumber: 17
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userClassDefault.default), {
-                    name: "Nikhil (Class)",
-                    location: "Ghaziabad"
+                    lineNumber: 30,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    className: "text-3xl font-bold text-center text-orange-600 mb-3",
+                    children: "About YumTown \uD83C\uDF74"
                 }, void 0, false, {
                     fileName: "src/components/About.js",
-                    lineNumber: 17,
-                    columnNumber: 17
-                }, this)
+                    lineNumber: 39,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    className: "text-gray-700 text-center leading-relaxed",
+                    children: [
+                        "Welcome to ",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                            className: "font-semibold text-orange-500",
+                            children: "YumTown"
+                        }, void 0, false, {
+                            fileName: "src/components/About.js",
+                            lineNumber: 45,
+                            columnNumber: 22
+                        }, undefined),
+                        ", your go-to destination for discovering delicious meals and top-rated restaurants around you! We bring local flavors right to your screen with fast delivery, honest reviews, and mouth-watering visuals. \uD83D\uDE0B"
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/About.js",
+                    lineNumber: 44,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "border-t-2 border-orange-100 my-5"
+                }, void 0, false, {
+                    fileName: "src/components/About.js",
+                    lineNumber: 52,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "text-center",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                            className: "text-xl font-semibold text-orange-600 mb-2",
+                            children: "Our Mission \uD83D\uDE80"
+                        }, void 0, false, {
+                            fileName: "src/components/About.js",
+                            lineNumber: 56,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            className: "text-gray-700",
+                            children: "To make food discovery and delivery seamless, exciting, and satisfying \u2014 connecting food lovers with the best kitchens in town!"
+                        }, void 0, false, {
+                            fileName: "src/components/About.js",
+                            lineNumber: 59,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/About.js",
+                    lineNumber: 55,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "flex justify-center gap-6 mt-6",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                            href: "#",
+                            className: "text-gray-500 hover:text-orange-500 transition",
+                            "aria-label": "Twitter",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                className: "fab fa-twitter text-2xl"
+                            }, void 0, false, {
+                                fileName: "src/components/About.js",
+                                lineNumber: 72,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/components/About.js",
+                            lineNumber: 67,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                            href: "#",
+                            className: "text-gray-500 hover:text-orange-500 transition",
+                            "aria-label": "Instagram",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                className: "fab fa-instagram text-2xl"
+                            }, void 0, false, {
+                                fileName: "src/components/About.js",
+                                lineNumber: 79,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/components/About.js",
+                            lineNumber: 74,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                            href: "#",
+                            className: "text-gray-500 hover:text-orange-500 transition",
+                            "aria-label": "Github",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                className: "fab fa-github text-2xl"
+                            }, void 0, false, {
+                                fileName: "src/components/About.js",
+                                lineNumber: 86,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/components/About.js",
+                            lineNumber: 81,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/About.js",
+                    lineNumber: 66,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    className: "text-center text-sm text-gray-400 mt-6",
+                    children: [
+                        "Made with \u2764\uFE0F by ",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                            className: "text-orange-500",
+                            children: "Nikhil"
+                        }, void 0, false, {
+                            fileName: "src/components/About.js",
+                            lineNumber: 92,
+                            columnNumber: 27
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/About.js",
+                    lineNumber: 91,
+                    columnNumber: 9
+                }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/components/About.js",
-            lineNumber: 15,
-            columnNumber: 13
-        }, this);
-    }
-}
+            lineNumber: 28,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/About.js",
+        lineNumber: 27,
+        columnNumber: 5
+    }, undefined);
+};
+_c = About;
 exports.default = About;
+var _c;
+$RefreshReg$(_c, "About");
 
   $parcel$ReactRefreshHelpers$f021.postlude(module);
 } finally {
@@ -799,65 +953,102 @@ class UserClass extends (0, _reactDefault.default).Component {
         const { count, count2 } = this.state;
         console.log("child render is called");
         return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "user-class",
+            className: "user-class m-7 space-y-3",
             children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "flex space-x-4",
                     children: [
-                        "count: ",
-                        count,
-                        " "
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                            className: "text-2xl font-semibold",
+                            children: [
+                                "count: ",
+                                count,
+                                " "
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/UserClass.js",
+                            lineNumber: 21,
+                            columnNumber: 15
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            className: "px-2 py-1 rounded-lg bg-blue-300 hover:bg-blue-500",
+                            onClick: ()=>{
+                                this.setState({
+                                    count: this.state.count + 1
+                                });
+                            },
+                            children: "Increase Count"
+                        }, void 0, false, {
+                            fileName: "src/components/UserClass.js",
+                            lineNumber: 22,
+                            columnNumber: 15
+                        }, this)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/UserClass.js",
                     lineNumber: 20,
-                    columnNumber: 17
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    onClick: ()=>{
-                        this.setState({
-                            count: this.state.count + 1
-                        });
-                    },
-                    children: "Increase Count"
-                }, void 0, false, {
-                    fileName: "src/components/UserClass.js",
-                    lineNumber: 21,
-                    columnNumber: 17
+                    columnNumber: 13
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    className: "text-lg font-semibold",
                     children: [
-                        "Name: ",
-                        name,
-                        " "
+                        "Name:",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                            className: "ml-4",
+                            children: name
+                        }, void 0, false, {
+                            fileName: "src/components/UserClass.js",
+                            lineNumber: 34,
+                            columnNumber: 20
+                        }, this)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/UserClass.js",
-                    lineNumber: 26,
-                    columnNumber: 17
+                    lineNumber: 33,
+                    columnNumber: 13
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                    className: "text-lg font-semibold",
                     children: [
-                        "Location: ",
-                        location,
+                        "Location:",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                            className: "ml-4",
+                            children: location
+                        }, void 0, false, {
+                            fileName: "src/components/UserClass.js",
+                            lineNumber: 37,
+                            columnNumber: 24
+                        }, this),
                         " "
                     ]
                 }, void 0, true, {
                     fileName: "src/components/UserClass.js",
-                    lineNumber: 27,
-                    columnNumber: 17
+                    lineNumber: 36,
+                    columnNumber: 13
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                    children: "Contact: @nikhilmi1050"
-                }, void 0, false, {
+                    className: "text-lg font-semibold",
+                    children: [
+                        "Contact:",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                            className: "ml-4",
+                            children: "nikhilmi1050@gmail.com"
+                        }, void 0, false, {
+                            fileName: "src/components/UserClass.js",
+                            lineNumber: 40,
+                            columnNumber: 23
+                        }, this)
+                    ]
+                }, void 0, true, {
                     fileName: "src/components/UserClass.js",
-                    lineNumber: 28,
-                    columnNumber: 17
+                    lineNumber: 39,
+                    columnNumber: 13
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/components/UserClass.js",
             lineNumber: 19,
-            columnNumber: 13
+            columnNumber: 11
         }, this);
     }
 }
@@ -868,6 +1059,6 @@ exports.default = UserClass;
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}]},["1aWES"], null, "parcelRequirec02e", {})
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}]},["605C5"], null, "parcelRequirec02e", {})
 
 //# sourceMappingURL=About.55328834.js.map

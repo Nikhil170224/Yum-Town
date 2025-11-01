@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Card from "./Card";
 import Shimmer from "./Shimmer";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import { REST_LIST } from "../utils/constants";
 
 
 const Body =()=>{
@@ -15,8 +16,7 @@ const Body =()=>{
   },[]);
 
   const fetchData = async ()=>{
-    const data = await fetch(
-  'https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.624480699999999&page_type=DESKTOP_WEB_LISTING')
+    const data = await fetch(REST_LIST)
 
     const json = await data.json();
     // Safely access nested data with optional chaining (to avoid crashes)

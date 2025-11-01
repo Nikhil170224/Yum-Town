@@ -6,7 +6,7 @@ const Card = (props) => {
   const imgBaseURL = "https://media-assets.swiggy.com/swiggy/image/upload/";
 
   return (
-    <div className="w-52 m-4 p-2 shadow-lg hover:border">
+    <div className="w-52 m-4 p-2 shadow-lg rounded-lg hover:border bg-gray-200 ">
       <img className="rounded-lg"
         src={imgBaseURL + cloudinaryImageId}
         alt={name}
